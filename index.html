@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="GitBauble is a developer inspired toy with to help make using Git for collaboratation a little more enjoyable.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, GitBauble, Toy, Development, software, Git, GitHub">
+    <meta name="author" content="Ryan O'Neill">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+</head>
+<body>
+
+<div class="container-fluid" id="landing"> 
+    <div class="container">
+            
+        <nav class="navbar navbar-transparent">
+            <a class="brand">
+                <img id="logo" src="logo.png" alt="">
+                GitBauble
+            </a>
+            <span class="nav-elements">
+                <a href="">About</a>
+                <a href="">Features</a>
+                <a href="">Contact</a>
+            </span>
+        </nav>
+        <div class="row" style="margin: auto;">
+            <div class="col-sm">
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+            </div>
+        </div>
+        <div class="row" style="margin: auto">
+            <div class="col-sm-8" style="padding-left: 0;">
+                <p class="subheader">GitBauble is an interactive toy made for developers to make your code contributions
+                    just a little bit more exciting.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin: auto;">
+            <a class="col-xs-12 col-sm-3 cta">
+                Learn More
+            </a>
+            <div class="col-xs-12 col-sm-9">
+                <img src="GitBauble-gif.gif" alt="" id="bobble_gif">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="problems">
+    <div id="first-container" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Software developement environments do not pause for appreciatation of what has been accomplished.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <img src="gitbauble_headphones.png" alt="">
+                <p>Long hours of not communicating.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                    <img src="no_celebration.png" alt="">
+                    <p>Closed Pull Requests are not adequately celebrated.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                    <img src="git_status.png" alt="">
+                    <p>Constantly checking your git status.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>GitBauble brings joy back into software development, and even provides some practical tools.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <img src="gitbauble.gif" alt="">
+                    <p>GitBauble will break up the monotony of the day.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                        <img src="celebration.png" alt="">
+                        <p>Celebration of progress on every step forward</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                        <img src="stoplight.png" alt="">
+                        <p>Physical manifestation of your git status</p>
+                </div>
+            </div>
+            <div class="row" id="second_cta">
+                <a class="col-xs-12 col-sm-4 col-centered cta">
+                    See all features
+                </a>
+            </div>
+        </div>
+</div>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-centered">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="faded">Website by Ryan O'Neill | rbo11oneill@gmail.com | Made with Vanilla HTML/CSS/JS </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // function([string1, string2],target id,[color1,color2])    
+ consoleText(['GitBauble', 'Brighten your day.'], 'text',['#272733', '#272733']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  //target.setAttribute('style', 'color:' + colors[0])
+  target.setAttribute('style', 'background: -webkit-linear-gradient(#ff3333, #ff3366,#ff3399); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        //target.setAttribute('style', 'color:' + colors[0])
+        target.setAttribute('style', 'background: -webkit-linear-gradient(#ff3333, #ff3366,#ff3399); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+</script>
+</body>
+</html>

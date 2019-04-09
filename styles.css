@@ -1,0 +1,212 @@
+#landing {
+    background-color: #f5f5ff;
+}
+
+#problems {
+    background-color: #272733;
+    color: #f5f5ff;
+    text-align: center;
+}
+
+#problems .container {
+    padding: 6em 0 4em 0;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#first-container {
+    border-bottom: 1px #f5f5ff solid;
+}
+
+#problems img {
+    height: 250px;
+    width: 250px;
+}
+
+#problems h1 {
+    font-size: 2em;
+    margin: auto auto 3em auto;
+    padding: 0 12%;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#problems p {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: .5em;
+    margin-bottom: 40px;
+}
+
+#bobble_gif {
+    width: 100%;
+    float: right;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    height: 75px;
+    border-bottom: solid 1px #272733;
+    padding: 20px 10px 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #272733;
+}
+
+.container {
+    padding: 0;
+}
+
+.brand {
+    color: #272733;
+}
+
+.brand:hover {
+    text-decoration: none;
+    color: #272733;
+    cursor: pointer;
+}
+
+.nav-elements {
+    float: right;
+    margin-top: 10px;
+}
+/* terminal animation */
+
+.nav-elements a {
+    color: #272733;
+    padding: 0 10px;
+}
+
+.nav-elements a:hover {
+    text-decoration: none;
+    color: #272733;
+    cursor: pointer;
+}
+
+.hidden {
+  opacity:0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #272733;
+}
+.console-container {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size:6em;
+  text-align:left;
+  min-height: 120px;
+  margin-top: 45px;
+  display:block;
+  color: #ff3366;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+.subheader {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 400;
+    opacity: .8;
+
+}
+
+.cta {
+    background-color: #272733;
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+    padding: .5em;
+    background: -webkit-linear-gradient(#ff3333, #ff3366,#ff3399);
+    color: #f5f5ff;
+    border-radius: 32px;
+    font-weight: 500;
+}
+
+#problems .cta {
+    font-size: 2em;
+    padding: .5em 1em;
+}
+
+#second_cta {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.cta:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #272733;
+}
+
+.cta:active{
+    background-color: black;
+}
+
+/*FOOTER CSS*/
+
+footer {
+    background-color: #f5f5ff;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: .6;
+    padding: 0;
+}
+
+footer li {
+    margin: .75em 0;
+}
+
+footer a {
+    color: #272733;
+}
+
+footer a:hover {
+    color: #272733;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faded {
+    opacity: 0.5;
+    font-size: .75em;
+}
+
+@media (max-width: 1024px) {
+
+    .console-container {
+        height: 240px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .console-container {
+        height: 360px;
+        word-wrap: break-word;
+    }
+
+}
