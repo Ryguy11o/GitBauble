@@ -57,6 +57,11 @@
     height: 50px;
 }
 
+#form_submit {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .navbar {
     height: 75px;
     border-bottom: solid 1px #272733;
