@@ -17,6 +17,11 @@
     margin: 0 auto;
 }
 
+#about_container {
+    border-bottom: 1px #2727332a solid;
+    padding-bottom: 45px;
+}
+
 #first-container {
     border-bottom: 1px #f5f5ff solid;
 }
@@ -193,6 +198,33 @@ footer a:hover {
     opacity: 0.5;
     font-size: .75em;
 }
+
+/* ABOUT PAGE CSS */
+
+.about h1 {
+    background: -webkit-linear-gradient(#ff3333, #ff3366,#ff3399); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+    font-size:4em;
+    text-align:center;
+    margin-top: 45px;
+}
+
+.about h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.about p {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
 
 @media (max-width: 1024px) {
 
