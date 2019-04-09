@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitBauble.com | Brighten your day</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="GitBauble is a developer inspired toy with to help make using Git for collaboratation a little more enjoyable.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, GitBauble, Toy, Development, software, Git, GitHub">
+    <meta name="author" content="Ryan O'Neill">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+</head>
+<body>
+
+<div class="container-fluid" id="landing"> 
+    <div class="container" id="about_container">
+        <nav class="navbar navbar-transparent">
+            <a class="brand" href="index.html">
+                <img id="logo" src="logo.png" alt="">
+                GitBauble
+            </a>
+            <span class="nav-elements">
+                <a href="about.html">About</a>
+                <a href="">Features</a>
+                <a href="contact.html">Contact</a>
+            </span>
+        </nav>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 about">
+                    <h1>
+                        Contact
+                    </h1>
+                    <h3>Feel free to reach out to us, we will get back to you as soon as possible!</h3>
+                    <form action="https://formspree.io/address@email.tld" method="POST" >
+                        <div class="form-group">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputSubject">Reason for contacting</label>
+                            <input type="text" name="subject" class="form-control" id="InputSubject" placeholder="Enter Subject">
+                        </div>
+                        <div class="form-group">
+                                <label for="InputBody">Message</label>
+                                <textarea type="text" name="body" class="form-control" id="InputBody" placeholder="Enter Message" rows="3"></textarea>                        </div>
+                        <button type="submit" class="cta">Send</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-centered">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="faded">Website by Ryan O'Neill | rbo11oneill@gmail.com | Made with HTML/CSS/JS </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>
