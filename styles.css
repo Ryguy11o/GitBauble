@@ -230,7 +230,15 @@ footer a:hover {
     margin-top: 20px;
 }
 
+/* features */
+.features_img {
+    width: 250px;
+    height: 250px;
+}
 
+#last_p {
+    padding-top: 25px;
+}
 @media (max-width: 1024px) {
 
     .console-container {
